@@ -1,0 +1,376 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker Course Outline</title>
+    <style>
+
+/* Reset some default browser styles */
+body, h1, h2, ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color to the whole page */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 80px 0px 0px 0px;
+}
+
+/* Style the header section */
+header {
+    text-align: center;
+    padding: 80px 20px 20px 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #0067f4;
+}
+
+/* Style the main content area */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 80px 20px 20px 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style each module section */
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 1.5em;
+    color: #555;
+    border-bottom: 2px solid #0067f4;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* Style the list of topics/subtopics */
+section ul {
+    list-style-type: none;
+}
+
+section ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    padding: 80px 20px 20px 20px;
+    font-size: 0.9em;
+    background: black;
+    color: white;
+}
+
+
+
+/* Style the Navbar */
+nav {
+    background-color: #0067f4;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#navbar-container {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+#brand {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #3498db;
+}
+
+
+/* Style the Preloader */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    z-index: 9999;
+}
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #0067f4;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+
+/* Style the Carousel */
+#carousel {
+    position: relative;
+    max-width: 800px;
+    margin: 40px auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: all 0.5s;
+}
+
+.slides img {
+    width: 100%;
+    flex: 1;
+}
+
+#prev, #next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    color: #3498db;
+    text-decoration: none;
+    z-index: 10;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+/* Style the "Enroll Now" Button */
+#enroll-button-container {
+    text-align: center;
+    margin: 40px auto;
+}
+
+#enroll-button {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+#enroll-button:hover {
+    background-color: #2980b9;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+</style>
+</head>
+<body>
+    
+
+<div id="preloader">
+    <div id="loader"></div>
+</div>
+
+<nav>
+    <div id="navbar-container">
+        <a href="#" id="brand">CloudageSkill Course</a>
+        <ul>
+            <li><a href="https://cloudageskill.com">Home</a></li>
+            <li><a href="https://cloudageskill.com">Courses</a></li>
+            <li><a href="https://cloudageskill.com">Services</a></li>
+        </ul>
+    </div>
+</nav>
+
+<header>
+        <center><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGWk7rSKkbOdl9heXe7SvBRnTjCbSwa1RYDFYKov9s7-9UByjaaLujhMtX86vhAGy8AP5Myui8D-8wFEMTpnGo-gz95I9edcUPsSLsuNQKtTI3snsL67_czqS6pAdfarB_4zR8XiH5zf0uQ-BeZHSgB6RSvyz2Tpmv4v2WlIWX0ScnU8QyBdqmX-G_y1Yy/w640-h360/stripe-docker-course.jpg" width="500px" height="300px"></center><br>
+        <h1>Docker Mastery: Zero to Hero Course Outline</h1><br>
+        <div id="enroll-button-container">
+            <a href="https://buy.stripe.com/5kAdR27Ae7Kp0zm6oo" id="enroll-button" target="_blank">Enroll Now</a>
+        </div>
+                
+</header>
+
+    <main>
+
+	<section>
+		<h2>Module 1: Getting started with Docker</h2>
+		<ul>
+			<li>What is Docker</li>
+			<li>Container Vs Virtual Machine</li>
+			<li>Docker Architecture</li>
+			<li>Installing Docker</li>
+			<li>Download Your First Image</li>
+			<li>Create Multi Stage Dockerfile</li>
+			<li>Run Applications as Docker Container</li>
+			<li>Run Applications as Docker Container (Continued)</li>
+			<li>Docker Commands</li>
+			<li>Lab Practice</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Module 2: Handling Docker Containers</h2>
+		<ul>
+			<li>Controlling Application in Docker</li>
+			<li>Container Lifecycle (Details)</li>
+			<li>Difference Between COPY and ADD</li>
+			<li>Dockerfile PHP</li>
+			<li>Build & Run</li>
+			<li>PHP+MYSQL Docker Images</li>
+			<li>Lab Practice</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Module 3: Docker Networking & Deploying Two Tier Application</h2>
+		<ul>
+			<li>Docker Network</li>
+			<li>Create a Docker Network</li>
+			<li>Build & Run a PHP WebApp Docker Image</li>
+			<li>Build or Pull & Run a MySQL Image</li>
+			<li>Exec into MySQL DB and Import Data</li>
+			<li>Check PHP+MYSQL WebApp</li>
+			<li>PHP Framework: Build Docker Image of Laravel</li>
+			<li>Lab Practice</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Module 4: Docker Registry & Publish Image</h2>
+		<ul>
+			<li>Build & Run Multi Stage Dockerfile</li>
+			<li>Docker Registry</li>
+			<li>Publish Image</li>
+			<li>Private Repository</li>
+			<li>Tagging Docker Images</li>
+			<li>Lab Practice</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Module 5: Docker Compose & Sharing Data Volumes</h2>
+		<ul>
+			<li>What is Docker Compose</li>
+			<li>Docker Compose</li>
+			<li>PHP+MYSQL Docker Compose</li>
+			<li>PHP+MYSQL Docker Compose Implementation</li>
+			<li>Volumes</li>
+			<li>Shared Volumes</li>
+			<li>Lab Practice</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Module 6: Docker Compose Practice</h2>
+		<ul>
+			<li>Build Spring Boot Java Application</li>
+			<li>Build PHP Laravel Application</li>
+			<li>Build Python Flask Application</li>
+			<li>Docker Compose Resource Management</li>
+			<li>Lab Practice</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Module 7: Docker Containers with Nginx</h2>
+		<ul>
+			<li>What is Nginx</li>
+			<li>Nginx Setup</li>
+			<li>Python Flask +MySQL Docker Container</li>
+			<li>Connect Docker App with Nginx</li>
+			<li>Lab Practice</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Module 8: Docker CI/CD Pipeline</h2>
+		<ul>
+			<li>What is CI/CD Pipeline</li>
+			<li>Docker CI Pipeline (Part 1)</li>
+			<li>Docker CD Pipeline</li>
+			<li>Live Application Deployment with Docker CI/CD & AWS/Azure Cloud Server</li>
+			<li>Lab Practice</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Module 9: Microservices Deployment with Docker</h2>
+		<ul>
+			<li>What is Microservices</li>
+			<li>How to write Docker Compose YML deployment file for Microservices</li>
+			<li>Setup Nginx in AWS/Azure Cloud Server</li>
+			<li>Deploy Microservices with Nginx in AWS/Azure Cloud Server</li>
+			<li>Lab Practice</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Module 10: Docker Containers Extra</h2>
+		<ul>
+			<li>Difference between RUN, CMD, & Entrypoint in Docker</li>
+			<li>Docker Arguments</li>
+			<li>Application deployments with docker build arguments</li>
+			<li>Lab Practice</li>
+		</ul>
+	</section>
+    </main>
+    <div id="enroll-button-container">
+        <a href="https://buy.stripe.com/5kAdR27Ae7Kp0zm6oo" id="enroll-button" target="_blank">Enroll Now</a>
+    </div>
+    <footer>
+        <p>&copy; 2023 CloudageSkill. All rights reserved.</p>
+    </footer>
+
+<script>
+    window.addEventListener('load', function() {
+        var preloader = document.getElementById('preloader');
+        preloader.style.display = 'none';
+    });
+</script>
+
+
+</body>
+</html>
