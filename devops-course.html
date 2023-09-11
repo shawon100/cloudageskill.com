@@ -1,0 +1,369 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Course Outline</title>
+    <style>
+
+/* Reset some default browser styles */
+body, h1, h2, ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color to the whole page */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 80px 0px 0px 0px;
+}
+
+/* Style the header section */
+header {
+    text-align: center;
+    padding: 80px 20px 20px 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #0067f4;
+}
+
+/* Style the main content area */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 80px 20px 20px 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style each module section */
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 1.5em;
+    color: #555;
+    border-bottom: 2px solid #0067f4;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* Style the list of topics/subtopics */
+section ul {
+    list-style-type: none;
+}
+
+section ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    padding: 80px 20px 20px 20px;
+    font-size: 0.9em;
+    background: black;
+    color: white;
+}
+
+
+
+/* Style the Navbar */
+nav {
+    background-color: #0067f4;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#navbar-container {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+#brand {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #3498db;
+}
+
+
+/* Style the Preloader */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    z-index: 9999;
+}
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #0067f4;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+
+/* Style the Carousel */
+#carousel {
+    position: relative;
+    max-width: 800px;
+    margin: 40px auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: all 0.5s;
+}
+
+.slides img {
+    width: 100%;
+    flex: 1;
+}
+
+#prev, #next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    color: #3498db;
+    text-decoration: none;
+    z-index: 10;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+/* Style the "Enroll Now" Button */
+#enroll-button-container {
+    text-align: center;
+    margin: 40px auto;
+}
+
+#enroll-button {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+#enroll-button:hover {
+    background-color: #2980b9;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.responsive {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+</style>
+</head>
+<body>
+    
+
+<div id="preloader">
+    <div id="loader"></div>
+</div>
+
+<nav>
+    <div id="navbar-container">
+        <a href="https://cloudageskill.com" id="brand">CloudageSkill</a>
+        <ul>
+            <li><a href="https://cloudageskill.com">Home</a></li>
+            <li><a href="https://cloudageskill.com">Courses</a></li>
+        </ul>
+    </div>
+</nav>
+
+<header>
+        <center><img src="assets/images/devops-course.jpg" class="responsive"></center><br>
+        <h1>DevOps Mastery: Zero to Hero Course Outline</h1><br>
+        <div id="enroll-button-container">
+            <a href="https://buy.stripe.com/cN214gcUy6Gl2HubIJ" id="enroll-button" target="_blank">Enroll Now</a>
+        </div>
+                
+</header>
+
+    <main>
+
+	<section>
+		<h2>Module 1: Introduction to DevOps</h2>
+		<ul>
+			<li>What is DevOps?</li>
+			<li>The Evolution of DevOps</li>
+			<li>Importance and Benefits of DevOps</li>
+			<li>Lab Practice</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Module 2: Source Control with Git</h2>
+		<ul>
+			<li>Git Basics</li>
+			<li>Branching and Merging</li>
+			<li>Git Workflows</li>
+			<li>Lab Practice</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Module 3: Continuous Integration</h2>
+		<ul>
+			<li>Introduction to CI</li>
+			<li>Setting up a CI Pipeline</li>
+			<li>Github Action Overview</li>
+			<li>Lab Practice</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Module 4: Continuous Delivery and Deployment</h2>
+		<ul>
+			<li>What is Continuous Delivery?</li>
+			<li>Deployment Strategies</li>
+			<li>Automated Deployment with Github Action</li>
+			<li>Lab Practice</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Module 5: Containerization with Docker</h2>
+		<ul>
+			<li>What are Containers?</li>
+			<li>Introduction to Docker</li>
+			<li>Docker Compose and Orchestration</li>
+			<li>Lab Practice</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Module 6: Kubernetes for Orchestration</h2>
+		<ul>
+			<li>What is Kubernetes?</li>
+			<li>Kubernetes Architecture</li>
+			<li>Deploying Applications with Kubernetes</li>
+			<li>Lab Practice</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Module 7: Monitoring and Logging</h2>
+		<ul>
+			<li>Importance of Monitoring</li>
+			<li>Application Monitoring Prometheus and Grafana</li>
+			<li>Logging with ELK Stack</li>
+			<li>Lab Practice</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Module 8: CI/CD Pipeline with Cloud</h2>
+		<ul>
+			<li>What is CI/CD Pipeline</li>
+			<li>Docker CI Pipeline (Part 1)</li>
+			<li>Docker CD Pipeline</li>
+			<li>Live Application Deployment with Docker CI/CD & AWS/Azure Cloud Server</li>
+			<li>Lab Practice</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Module 9: Microservices Deployment with Docker & Kubernetes</h2>
+		<ul>
+			<li>What is Microservices</li>
+			<li>How to write Docker Compose YML deployment file for Microservices</li>
+			<li>Setup Nginx in AWS/Azure Cloud Server</li>
+			<li>Deploy Microservices with Nginx in AWS/Azure Cloud Server</li>
+			<li>Lab Practice</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Module 10: Infrastructure as Code and Terraform</h2>
+		<ul>
+			<li>Why Infrastructure as Code?</li>
+			<li>Introduction to Terraform</li>
+			<li>Terraform Best Practices</li>
+			<li>Lab Practice</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Module 11: Interview & Job Tips</h2>
+		<ul>
+			<li>Best Practices in DevOps</li>
+			<li>CV & Interview Tips</li>
+			<li>How to land on DevOps Jobs from scratch</li>
+		</ul>
+	</section>
+    </main>
+    <div id="enroll-button-container">
+        <a href="https://buy.stripe.com/cN214gcUy6Gl2HubIJ" id="enroll-button" target="_blank">Enroll Now</a>
+    </div>
+    <footer>
+        <p>&copy; 2023 CloudageSkill. All rights reserved.</p>
+    </footer>
+
+<script>
+    window.addEventListener('load', function() {
+        var preloader = document.getElementById('preloader');
+        preloader.style.display = 'none';
+    });
+</script>
+
+
+</body>
+</html>
